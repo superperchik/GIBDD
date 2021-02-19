@@ -1,0 +1,5 @@
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDDD_NEW\obj\Debug\GIBDDD_NEW.csprojAssemblyReference.cache
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDDD_NEW\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDDD_NEW\obj\Debug\App.g.cs
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDDD_NEW\obj\Debug\GIBDDD_NEW_MarkupCompile.cache
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDDD_NEW\obj\Debug\GIBDDD_NEW_MarkupCompile.lref

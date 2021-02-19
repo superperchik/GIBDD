@@ -1,0 +1,23 @@
+﻿<Page x:Class="GIBDD_project.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GIBDD_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="MenuPage" Width="900">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Добавить водителя" Background="Red" FontSize="40" Name="AddDriverPage" HorizontalAlignment="Center" Height="100" Grid.Row="0" VerticalAlignment="Center" Width="900" Click="AddDriverPage_Click" Cursor="Hand" FontFamily="Arial Rounded MT Bold" />
+        <Button Content="Редактировать водителя" Background="Yellow" FontSize="40" Name="ChangeDrivePage" HorizontalAlignment="Center" Height="100" Grid.Row="1" VerticalAlignment="Center" Width="900" Click="ChangeDrivePage_Click" Cursor="Hand" FontFamily="Arial Rounded MT Bold"></Button>
+        <Button Content="Добавить машину" Background="GreenYellow" FontSize="40" Name="RegistrateCar" HorizontalAlignment="Center" Height="100" Grid.Row="2" VerticalAlignment="Center" Width="900" Click="RegistrateCar_Click" Cursor="Hand" FontFamily="Arial Rounded MT Bold"></Button>
+        <Button Content="Просмотреть водительское удостоверение" Background="AliceBlue" FontSize="40" Name="LookatLicense" HorizontalAlignment="Center" Height="100" Grid.Row="3" VerticalAlignment="Center" Width="900" Click="LookatLicense_Click" Cursor="Hand" FontFamily="Arial Rounded MT Bold" ></Button>
+    </Grid>
+</Page>

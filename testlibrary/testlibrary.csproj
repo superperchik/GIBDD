@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VIN_LIB">
+      <HintPath>..\VIN_LIB\VIN_LIB\bin\Debug\VIN_LIB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
