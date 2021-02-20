@@ -1,0 +1,11 @@
+ private static GIBDDEntities _context;
+        public GIBDDEntities()
+            : base("name=GIBDDEntities")
+        {
+        }
+        public static GIBDDEntities GetContext()
+        {
+            if (_context == null)
+                _context = new GIBDDEntities();
+            return _context;
+        }
