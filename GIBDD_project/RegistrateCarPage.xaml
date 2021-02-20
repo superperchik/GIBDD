@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:GIBDD_project"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegistrateCarPage">
+      Title="RegistrateCarPage" MaxHeight="450" MaxWidth="800">
 
     <ScrollViewer HorizontalScrollBarVisibility="Auto" Name="scrolldriver" Margin="0,0,0,10">
         <Grid Height="551">

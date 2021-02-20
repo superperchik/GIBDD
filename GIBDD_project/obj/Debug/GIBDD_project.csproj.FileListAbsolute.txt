@@ -32,3 +32,39 @@ C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\D
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ChangeDrivePage.baml
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\RegistrateCarPage.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\RegistrateCarPage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csprojAssemblyReference.cache
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\AddDriverPage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\AdminForm.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\ChangeDrivePage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\LoginPage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\LookatLicensePage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\MainWindow.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\MenuPage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\RegistrateCarPage.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\App.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project_Content.g.cs
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project_MarkupCompile.cache
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project_MarkupCompile.lref
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.exe
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.pdb
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\GIBDD_project.exe.config
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\GIBDD_project.exe
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\GIBDD_project.pdb
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\EntityFramework.dll
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\EntityFramework.xml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\AddDriverPage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\AdminForm.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\ChangeDrivePage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\LoginPage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\MainWindow.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\MenuPage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\RegistrateCarPage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\LookatLicensePage.baml
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.g.resources
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.Properties.Resources.resources
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.GenerateResource.cache
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CoreCompileInputs.cache
+C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CopyComplete

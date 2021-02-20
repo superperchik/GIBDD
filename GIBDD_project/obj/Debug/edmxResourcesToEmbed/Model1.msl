@@ -42,17 +42,16 @@
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="middlename" ColumnName="middlename" />
-          <ScalarProperty Name="fathersname" ColumnName="fathersname" />
-          <ScalarProperty Name="passportserial" ColumnName="passportserial" />
-          <ScalarProperty Name="passportnumber" ColumnName="passportnumber" />
+          <ScalarProperty Name="fathers_name" ColumnName="fathers name" />
+          <ScalarProperty Name="passport_serial" ColumnName="passport serial" />
+          <ScalarProperty Name="passport_number" ColumnName="passport number" />
           <ScalarProperty Name="postcode" ColumnName="postcode" />
           <ScalarProperty Name="address" ColumnName="address" />
-          <ScalarProperty Name="addresslife" ColumnName="addresslife" />
+          <ScalarProperty Name="address_life" ColumnName="address life" />
           <ScalarProperty Name="company" ColumnName="company" />
           <ScalarProperty Name="jobname" ColumnName="jobname" />
           <ScalarProperty Name="phone" ColumnName="phone" />
           <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="image" ColumnName="image" />
           <ScalarProperty Name="description" ColumnName="description" />
         </MappingFragment>
       </EntityTypeMapping>

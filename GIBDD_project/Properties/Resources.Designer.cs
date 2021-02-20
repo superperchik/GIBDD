@@ -63,6 +63,16 @@ namespace GIBDD_project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap driver_licence_example {
+            get {
+                object obj = ResourceManager.GetObject("driver_licence_example", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gibddlogo {
             get {
                 object obj = ResourceManager.GetObject("gibddlogo", resourceCulture);

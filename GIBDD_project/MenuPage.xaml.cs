@@ -20,6 +20,7 @@ namespace GIBDD_project
     /// </summary>
     public partial class MenuPage : Page
     {
+        
         public MenuPage()
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace GIBDD_project
 
         private void LookatLicense_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new LookatLicensePage());
         }
     }
 }

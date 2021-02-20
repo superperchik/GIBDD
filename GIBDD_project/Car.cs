@@ -17,7 +17,7 @@ namespace GIBDD_project
         public string VIN { get; set; }
         public string Manufacturer { get; set; }
         public string Model { get; set; }
-        public Nullable<int> year { get; set; }
+        public Nullable<System.DateTime> year { get; set; }
         public Nullable<int> weight { get; set; }
         public string Number_of_color { get; set; }
         public Nullable<int> Engine_type { get; set; }

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:GIBDD_project"
       mc:Ignorable="d" 
       d:DesignHeight="450"
-      Title="MenuPage" Width="900">
+      Title="MenuPage" MaxWidth="900">
 
     <Grid>
         <Grid.RowDefinitions>

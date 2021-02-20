@@ -39,11 +39,11 @@ namespace GIBDD_project
                 errors.AppendLine("Введите Имя");
             if (string.IsNullOrWhiteSpace(_currentDrivers.middlename))
                 errors.AppendLine("Введите Фамилию");
-            if (string.IsNullOrWhiteSpace(_currentDrivers.fathersname))
+           // if (string.IsNullOrWhiteSpace(_currentDrivers.fathersname))
                 errors.AppendLine("Введите Отчество");
-            if (string.IsNullOrWhiteSpace(_currentDrivers.passportnumber))
+           // if (string.IsNullOrWhiteSpace(_currentDrivers.passportnumber))
                 errors.AppendLine("Введите Номер Паспорта");
-            if (string.IsNullOrWhiteSpace(_currentDrivers.passportserial))
+           // if (string.IsNullOrWhiteSpace(_currentDrivers.passportserial))
                 errors.AppendLine("Введите Серию Пасспорта");
             if (string.IsNullOrWhiteSpace(_currentDrivers.address))
                 errors.AppendLine("Введите Адресс");
