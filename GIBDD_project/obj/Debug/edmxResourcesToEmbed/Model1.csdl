@@ -20,7 +20,7 @@
     <Property Name="VIN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Manufacturer" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="year" Type="DateTime" Precision="0" />
+    <Property Name="year" Type="Int32" />
     <Property Name="weight" Type="Int32" />
     <Property Name="Number_of_color" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="Engine_type" Type="Int32" />
@@ -43,16 +43,17 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="middlename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="fathers_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="passport_serial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="passport_number" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="fathersname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="passportserial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="passportnumber" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="postcode" Type="Int32" />
     <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="address_life" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="addresslife" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="jobname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Cars" Relationship="Self.FK_Cars_Drivers" FromRole="Drivers" ToRole="Cars" />
   </EntityType>

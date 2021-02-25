@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GIBDD_project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="900">
+        Title="MainWindow" MaxHeight="450" MaxWidth="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -14,8 +14,8 @@
             <RowDefinition Height="36*"/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="1" Content="Back" Width="175" Height="30" Background="#fffcd6" Panel.ZIndex="2" HorizontalAlignment="Right" Margin="10" Name="BtnBack" Click="BtnBack_Click" Cursor="" FontSize="18" FontWeight="Bold" FontFamily="Times New Roman"></Button>
-        <Grid Grid.Row="1" ShowGridLines="True">
+        <Button Grid.Row="1" Content="Back" Width="175" Height="30" Background="#fffcd6" Panel.ZIndex="2" HorizontalAlignment="Right" Margin="10" Name="BtnBack" Click="BtnBack_Click" Cursor="Hand" FontSize="18" FontWeight="Bold" FontFamily="Times New Roman"></Button>
+        <Grid Grid.Row="1" ShowGridLines="False">
             <Border BorderThickness="2">
                 <Border.BorderBrush>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -41,7 +41,7 @@
             </Frame.Background>
         </Frame>
         <Grid Grid.Row="3"/>
-        <Image Source="Resources/gibddlogo.jpg" HorizontalAlignment="Left" Grid.RowSpan="2" ></Image>
+        <Image Source="Resources/gibddlogo.jpg" HorizontalAlignment="Left" Grid.RowSpan="2"  Panel.ZIndex="2"></Image>
 
     </Grid>
 </Window>

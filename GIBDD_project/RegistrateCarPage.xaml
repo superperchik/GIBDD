@@ -31,37 +31,37 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="VIN" VerticalAlignment="Center" Grid.Row="0" Height="50" Width="250" Margin="17,18,18,19"/>
-            <TextBox  Height="81" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding VIN}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="342" Margin="0,0,-31,0"/>
+            <TextBox  Height="81" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding VIN}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="342" Margin="0,0,-31,0" FontSize="18"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Марка" VerticalAlignment="Center" Grid.Row="1"  Grid.RowSpan="1" Height="50" Width="250" Margin="17,5,18,5"/>
-            <TextBox  Height="56" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Manufacturer}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="342"/>
+            <TextBox  Height="56" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Manufacturer}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="342" FontSize="16"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Модель" VerticalAlignment="Center" Grid.Row="1" Height="50" Width="250" Margin="17,58,18,43" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Model}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,13,0,9" RenderTransformOrigin="0.51,-0.447"/>
+            <TextBox  Height="24" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Model}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,11,0,8" RenderTransformOrigin="0.51,-0.447"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Год" VerticalAlignment="Center" Grid.Row="2" Height="50" Width="250" Margin="17,43,18,39" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding year}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,9,0,12"/>
+            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding year}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,8,0,10"/>
 
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Цвет" VerticalAlignment="Center" Grid.Row="3" Height="50" Width="276" Margin="25,41,0,36" Grid.RowSpan="3"/>
-            <TextBox  Height="22" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Number of color]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,10,0,9"/>
+            <TextBox  Height="22" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Number of color]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,9,0,8"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Тип двигателя" VerticalAlignment="Center" Grid.Row="4" Height="50" Width="250" Margin="17,36,18,35" Grid.RowSpan="3"/>
-            <TextBox  Height="22" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine type]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,9,0,10"/>
+            <TextBox  Height="22" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine type]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,8,0,9"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Категория машины" VerticalAlignment="Center" Grid.Row="5"  Height="50" Width="250" Margin="17,35,18,42" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [category of car]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,10,0,5"/>
+            <TextBox  Height="24" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [category of car]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,9,0,4"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Номер двигателя" VerticalAlignment="Center" Grid.Row="6" Height="50" Width="250" Margin="17,38,18,32" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine number]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,14,0,9"/>
+            <TextBox  Height="24" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine number]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,13,0,7"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Год двигателя" VerticalAlignment="Center" Grid.Row="7" Height="50" Width="250" Margin="17,39,18,66" Grid.RowSpan="3"/>
-            <TextBox  Height="22" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine year]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,14,0,72" Grid.RowSpan="2"/>
+            <TextBox  Height="22" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" Text="{Binding [Engine year]}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,11,0,68" Grid.RowSpan="2"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Id водителя" VerticalAlignment="Center" Grid.Row="9" Height="50" Width="250" Margin="17,12,18,12"/>
-            <TextBox  Height="24" Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" Text="{Binding driver}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,26,0,24"/>
+            <ComboBox  Height="24" Grid.Row="9" Grid.Column="1" DisplayMemberPath="driver" SelectedItem="{Binding driver}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,23,0,22"/>
 
-            <Button x:Name="BtnSave" Content="Сохранить" FontSize="45" HorizontalAlignment="Left"  Grid.Row="10" VerticalAlignment="Top" Width="763" Height="67" Click="BtnSave_Click" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
+            <Button x:Name="BtnSaveCar" Content="Сохранить" FontSize="45" HorizontalAlignment="Left"  Grid.Row="10" VerticalAlignment="Top" Width="763" Height="67" Click="BtnSaveCar_Click" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
 
         </Grid>
     </ScrollViewer>

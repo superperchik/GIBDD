@@ -68,3 +68,5 @@ C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.Properties.Reso
 C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.GenerateResource.cache
 C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CoreCompileInputs.cache
 C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CopyComplete
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LookatLicensePage.g.cs
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LookatLicensePage.baml

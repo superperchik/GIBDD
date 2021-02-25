@@ -31,12 +31,17 @@ namespace GIBDD_project
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void BtnSaveCar_Click(object sender, RoutedEventArgs e)
+        {
             StringBuilder errors = new StringBuilder();
 
             if (string.IsNullOrWhiteSpace(_currentCars.VIN))
-             errors.AppendLine("Введите VIN");
-            
-           // if (_currentCars.year)
+                errors.AppendLine("Введите VIN");
+
+            // if (_currentCars.year)
 
 
             if (errors.Length > 0)
