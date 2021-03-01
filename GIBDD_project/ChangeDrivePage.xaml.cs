@@ -23,12 +23,14 @@ namespace GIBDD_project
         public ChangeDrivePage()
         {
             InitializeComponent();
+            //DGridChangeDrivers.ItemsSource = GIBDDEntities.GetContext().Drivers.ToList();
             DGridChangeDrivers.ItemsSource = GIBDDEntities.GetContext().Drivers.ToList();
         }
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-           // Manager.MainFrame.Navigate(new AddDriverPage(null));
+            // Manager.MainFrame.Navigate(new AddDriverPage(null));
+            //Manager.MainFrame.Navigate(new AddDriverPage((sender as Button).DataContext as Driver));
             Manager.MainFrame.Navigate(new AddDriverPage((sender as Button).DataContext as Driver));
         }
 

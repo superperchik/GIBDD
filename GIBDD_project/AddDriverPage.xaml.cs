@@ -20,19 +20,24 @@ namespace GIBDD_project
     /// </summary>
     public partial class AddDriverPage : Page
     {
+
         private Driver _currentDrivers = new Driver();
+        //private Driver _currentDrivers = new Driver();
         public AddDriverPage(Driver selectedDriver)
         {
             InitializeComponent();
             if (selectedDriver != null)
                 _currentDrivers = selectedDriver;
             DataContext = _currentDrivers;
+            //if (selectedDriver != null)
+              //  _currentDrivers = selectedDriver;
+           // DataContext = _currentDrivers;
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
+            // StringBuilder errors = new StringBuilder();
             StringBuilder errors = new StringBuilder();
-          
             //if (string.IsNullOrWhiteSpace(_currentDrivers.middlename))
               //  errors.AppendLine("Введите Фамилию");
             if (string.IsNullOrWhiteSpace(_currentDrivers.name))
@@ -58,9 +63,10 @@ namespace GIBDD_project
                 MessageBox.Show(errors.ToString());
                 return;
             }
+            //if (_currentDrivers.id == 0)
+            //  GIBDDEntities.GetContext().Drivers.Add(_currentDrivers);
             if (_currentDrivers.id == 0)
                 GIBDDEntities.GetContext().Drivers.Add(_currentDrivers);
-
             try
             {
                GIBDDEntities.GetContext().SaveChanges();
