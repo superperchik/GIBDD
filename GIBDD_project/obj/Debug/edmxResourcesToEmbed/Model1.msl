@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище GIBDDModelContainer" CdmEntityContainer="GIBDDEntities">
-    <EntitySetMapping Name="Car_Colors">
-      <EntityTypeMapping TypeName="GIBDDModel.Car_Colors">
-        <MappingFragment StoreEntitySet="Car_Colors">
-          <ScalarProperty Name="Color_num" ColumnName="Color num" />
-          <ScalarProperty Name="Color_code" ColumnName="Color code" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="Colorname" ColumnName="Colorname" />
-          <ScalarProperty Name="is_metallic_" ColumnName="is metallic?" />
-          <ScalarProperty Name="Name_EN" ColumnName="Name EN" />
-          <ScalarProperty Name="Colorname_EN" ColumnName="Colorname EN" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Cars">
       <EntityTypeMapping TypeName="GIBDDModel.Car">
         <MappingFragment StoreEntitySet="Cars">

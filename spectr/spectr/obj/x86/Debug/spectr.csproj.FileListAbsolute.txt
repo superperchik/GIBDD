@@ -16,3 +16,12 @@ C:\Users\123\Desktop\spectr\spectr\obj\x86\Debug\spectr.csproj.GenerateResource.
 C:\Users\123\Desktop\spectr\spectr\obj\x86\Debug\spectr.csproj.CoreCompileInputs.cache
 C:\Users\123\Desktop\spectr\spectr\obj\x86\Debug\spectr.exe
 C:\Users\123\Desktop\spectr\spectr\obj\x86\Debug\spectr.pdb
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\bin\Debug\spectr.exe
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\bin\Debug\spectr.pdb
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.csprojAssemblyReference.cache
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.Form1.resources
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.Properties.Resources.resources
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.csproj.GenerateResource.cache
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.exe
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\spectr\spectr\obj\x86\Debug\spectr.pdb

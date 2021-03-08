@@ -25,12 +25,12 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-        <TextBlock Text="Авторизация" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Broadway" FontStyle="Italic" TextDecorations="{x:Null}" />
-        <TextBlock Text="Логин" Grid.Row="2" Grid.Column="1" FontSize="25" FontFamily="Broadway" FontStyle="Italic" TextDecorations="{x:Null}" HorizontalAlignment="Center"  VerticalAlignment="Center"></TextBlock>
-        <TextBox x:Name="LoginBox" Height="30" Grid.Column="2" Grid.Row="2" FontSize="25"></TextBox>
-        <TextBlock Text="Пароль" Grid.Row="3" Grid.Column="1" FontSize="25" FontFamily="Broadway" FontStyle="Italic" TextDecorations="{x:Null}" HorizontalAlignment="Center"  VerticalAlignment="Center"></TextBlock>
-        <PasswordBox x:Name="PassBox" Grid.Row="3" Grid.Column="2" Height="30" FontSize="22"></PasswordBox>
-        <Button Name="BtnEnter" Click="BtnEnter_Click" Grid.Column="1" Grid.Row="4" Height="30" Content="Войти" FontSize="15" Width="100"></Button>
-        
+        <TextBlock Text="Авторизация" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Comic Sans MS" FontStyle="Italic" TextDecorations="{x:Null}" Margin="171,10,183,38" Grid.RowSpan="2" />
+        <TextBlock Text="Логин" Grid.Row="2" Grid.Column="1" FontSize="36" FontFamily="Comic Sans MS" FontStyle="Italic" TextDecorations="{x:Null}" HorizontalAlignment="Center"  VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="LoginBox" Grid.Column="2" Grid.Row="2" FontSize="25" Margin="0,20,0,0" FontWeight="Bold"/>
+        <TextBlock  Text="Пароль" Grid.Row="3" Grid.Column="1" FontSize="36" FontFamily="Comic Sans MS" FontStyle="Italic" TextDecorations="{x:Null}" HorizontalAlignment="Center"  VerticalAlignment="Center"></TextBlock>
+        <PasswordBox x:Name="PassBox" Grid.Row="3" Grid.Column="2" FontSize="22" FontFamily="Comic Sans MS" Margin="0,20,0,0" FontWeight="Bold"/>
+        <Button Background="Yellow" Name="BtnEnter" Click="BtnEnter_Click" Grid.Column="1" Grid.Row="4" Content="Войти" FontSize="36" FontFamily="Comic Sans MS" Grid.ColumnSpan="2" Margin="121,10,130,0"/>
+
     </Grid>
 </Page>

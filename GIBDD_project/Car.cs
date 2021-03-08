@@ -31,7 +31,6 @@ namespace GIBDD_project
         public string Engine_model { get; set; }
         public Nullable<int> driver { get; set; }
     
-        public virtual Car_Colors Car_Colors { get; set; }
         public virtual Driver Driver1 { get; set; }
     }
 }

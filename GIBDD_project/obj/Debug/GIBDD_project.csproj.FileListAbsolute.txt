@@ -2,13 +2,11 @@ C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\D
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\App.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\GIBDD_project_MarkupCompile.cache
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\GIBDD_project_MarkupCompile.lref
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\AdminForm.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LoginPage.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\bin\Debug\GIBDD_project.exe.config
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\bin\Debug\GIBDD_project.exe
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\bin\Debug\GIBDD_project.pdb
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\MainWindow.baml
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\AdminForm.baml
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LoginPage.baml
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\GIBDD_project.g.resources
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\GIBDD_project.Properties.Resources.resources
@@ -70,3 +68,7 @@ C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CoreComp
 C:\Users\123\Desktop\GIBDD\GIBDD_project\obj\Debug\GIBDD_project.csproj.CopyComplete
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LookatLicensePage.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\LookatLicensePage.baml
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPage.g.cs
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPage.baml
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPickerPage.g.cs
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPickerPage.baml

@@ -29,38 +29,38 @@
 
             </Grid.ColumnDefinitions>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Center" Grid.Row="0" Height="50" Width="250" Margin="17,18,18,19"/>
-            <TextBox  Height="61" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding middlename}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="229" Margin="10,10,0,10" FontSize="16"/>
+            <TextBlock FontSize="48" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Center" Grid.Row="0" Height="56" Width="208" Margin="122,15,164,10" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="56" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding middlename}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,15,0,10" FontSize="36" FontFamily="Comic Sans MS"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Имя" VerticalAlignment="Center" Grid.Row="1"  Grid.RowSpan="1" Height="50" Width="250" Margin="17,5,18,5"/>
-            <TextBox  Height="36" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="229" Margin="10,10,0,10" FontSize="16"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Имя" VerticalAlignment="Center" Grid.Row="1"  Grid.RowSpan="1" Height="50" Width="156" Margin="127,3,222,3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="36" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="{Binding name}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,10,0,10" FontSize="16" FontFamily="Comic Sans MS"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Center" Grid.Row="1" Height="50" Width="250" Margin="17,58,18,43" Grid.RowSpan="3"/>
-            <TextBox  Height="25" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="{Binding fathersname}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="229" Margin="10,10,0,8" RenderTransformOrigin="0.51,-0.447"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Center" Grid.Row="1" Height="50" Width="156" Margin="126,53,221,38" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="25" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="{Binding fathersname}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,10,0,8" RenderTransformOrigin="0.51,-0.447" FontFamily="Comic Sans MS" FontSize="16"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Паспорт" VerticalAlignment="Center" Grid.Row="2" Height="50" Width="250" Margin="17,43,18,39" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding passportserial}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,9,0,12"/>
-            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding passportnumber}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="147,9,0,12"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Паспорт" VerticalAlignment="Center" Grid.Row="2" Height="50" Width="156" Margin="124,39,220,35" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding passportserial}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,9,0,12" FontFamily="Comic Sans MS" FontSize="14"/>
+            <TextBox  Height="24" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="{Binding passportnumber}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="147,9,0,12" FontFamily="Comic Sans MS" FontSize="14"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Адрес регистрации" VerticalAlignment="Center" Grid.Row="3" Height="50" Width="276" Margin="25,41,0,36" Grid.RowSpan="3"/>
-            <TextBox  Height="22" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="{Binding address}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,10,0,9"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Адрес регистрации" VerticalAlignment="Center" Grid.Row="3" Height="50" Width="282" Margin="128,38,96,32" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="22" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Text="{Binding address}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,9,0,8" FontFamily="Comic Sans MS" FontSize="16"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Адрес проживания" VerticalAlignment="Center" Grid.Row="4" Height="50" Width="266" Margin="76,33,62,32" Grid.RowSpan="3"/>
-            <TextBox  Height="22" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Text="{Binding adresslife}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,9,0,10"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Адрес проживания" VerticalAlignment="Center" Grid.Row="4" Height="50" Width="283" Margin="127,33,96,32" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="22" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Text="{Binding addresslife}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,8,0,9" FontFamily="Comic Sans MS" FontSize="16"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Место работы" VerticalAlignment="Center" Grid.Row="5"  Height="50" Width="250" Margin="17,35,18,42" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="{Binding company}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,10,0,5"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Место работы" VerticalAlignment="Center" Grid.Row="5"  Height="50" Width="208" Margin="128,31,170,39" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="24" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" Text="{Binding company}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,9,0,4" FontFamily="Comic Sans MS" FontSize="16"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Должность" VerticalAlignment="Center" Grid.Row="6" Height="50" Width="250" Margin="17,38,18,32" Grid.RowSpan="3"/>
-            <TextBox  Height="24" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" Text="{Binding jobname}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120" Margin="10,14,0,9"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Должность" VerticalAlignment="Center" Grid.Row="6" Height="50" Width="166" Margin="128,34,212,29" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="24" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" Text="{Binding jobname}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,13,0,7" FontFamily="Comic Sans MS" FontSize="16"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Моб.телефон" VerticalAlignment="Center" Grid.Row="7" Height="50" Width="250" Margin="17,39,18,66" Grid.RowSpan="3"/>
-            <TextBox  Height="31" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" Text="{Binding phone}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="159" Margin="10,1,0,0" FontSize="16"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Моб.телефон" VerticalAlignment="Center" Grid.Row="7" Height="50" Width="208" Margin="128,34,170,61" Grid.RowSpan="3" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="31" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" Text="{Binding phone}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,1,0,0" FontSize="16" FontFamily="Comic Sans MS"/>
 
-            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="И-маил" VerticalAlignment="Center" Grid.Row="9" Height="50" Width="250" Margin="17,12,18,12"/>
-            <TextBox  Height="37" Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" Text="{Binding email}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="159" Margin="10,10,0,22" FontSize="16"/>
+            <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="И-маил" VerticalAlignment="Center" Grid.Row="9" Height="50" Width="167" Margin="127,9,212,10" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="37" Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" Text="{Binding email}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="257" Margin="10,10,0,22" FontSize="16" FontFamily="Comic Sans MS"/>
 
-            <Button x:Name="BtnSave" Content="Сохранить" FontSize="45" HorizontalAlignment="Left"  Grid.Row="10" VerticalAlignment="Top" Width="763" Height="67" Click="BtnSave_Click" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
+            <Button x:Name="BtnSave" Content="Сохранить" FontSize="45" HorizontalAlignment="Center" Background="Yellow" Foreground="Black"  Grid.Row="10" VerticalAlignment="Top" Width="763" Height="67" Click="BtnSave_Click" Margin="10,0,0,0" Grid.ColumnSpan="2"/>
 
         </Grid>
     </ScrollViewer>

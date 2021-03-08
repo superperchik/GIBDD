@@ -21,12 +21,17 @@ namespace spectr
         }
 
 
-        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        private void pictureBox1_PreviewMouseDown(object sender, MouseEventArgs e)
         {
             
             p = pictureBox1.PointToClient(Cursor.Position);
             textBox1.Text = ColorTranslator.ToHtml(bitmp.GetPixel(p.X, p.Y)).ToString();
-            panel1.BackColor = ColorTranslator.FromHtml(textBox1.Text);
+           panel1.BackColor = ColorTranslator.FromHtml(textBox1.Text);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

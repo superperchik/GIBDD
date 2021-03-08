@@ -38,8 +38,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="BtnAdd" Content="Добавить" Grid.Row="1" Width="182" Height="40" FontSize="20" HorizontalAlignment="Left" Click="BtnAdd_Click" ></Button>
-        <Button x:Name="BtnDel" Content="Удалить" Grid.Row="1" Width="120" FontSize="20" Height="40" HorizontalAlignment="Right" Click="BtnDel_Click" ></Button>
+        <Button Background="Yellow" Foreground="Black" x:Name="BtnAdd" Content="Добавить" Grid.Row="1" Width="182" Height="40" FontSize="20" HorizontalAlignment="Left" Click="BtnAdd_Click" FontFamily="Comic Sans MS" ></Button>
+        <Button Background="Yellow" Foreground="Black" x:Name="BtnDel" Content="Удалить" Grid.Row="1" Width="120" FontSize="20" Height="40" HorizontalAlignment="Right" Click="BtnDel_Click" FontFamily="Comic Sans MS" ></Button>
     </Grid>
     
 </Page>

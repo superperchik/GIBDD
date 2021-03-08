@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Хранилище GIBDDModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="Car_Colors">
-    <Key>
-      <PropertyRef Name="Color code" />
-    </Key>
-    <Property Name="Color num" Type="nchar" MaxLength="10" />
-    <Property Name="Color code" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="name" Type="nchar" MaxLength="10" />
-    <Property Name="Colorname" Type="nchar" MaxLength="10" />
-    <Property Name="is metallic?" Type="int" />
-    <Property Name="Name EN" Type="nchar" MaxLength="10" />
-    <Property Name="Colorname EN" Type="nchar" MaxLength="10" />
-  </EntityType>
   <EntityType Name="Cars">
     <Key>
       <PropertyRef Name="VIN" />
@@ -53,15 +41,6 @@
     <Property Name="image" Type="varbinary(max)" />
     <Property Name="description" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "GIBDD.dbo.Region Codes" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Region Codes">
-          <Property Name="Region name RU" Type="nvarchar" MaxLength="50" />
-          <Property Name="Subject code" Type="nvarchar" MaxLength="50" />
-          <Property Name="Code" Type="nvarchar" MaxLength="10" />
-          <Property Name="OKATO code" Type="nvarchar" MaxLength="50" />
-          <Property Name="ISO 3166-2" Type="nvarchar" MaxLength="10" />
-        </EntityType>-->
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -80,27 +59,6 @@
           <Property Name="Password" Type="nvarchar" MaxLength="50" />
           <Property Name="Role" Type="int" />
         </EntityType>-->
-  <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "GIBDD.dbo.Копия Region Codes" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Копия Region Codes">
-          <Property Name="Column 0" Type="varchar" MaxLength="50" />
-          <Property Name="Column 1" Type="varchar" MaxLength="50" />
-          <Property Name="Column 2" Type="varchar" MaxLength="50" />
-          <Property Name="Column 3" Type="varchar" MaxLength="50" />
-          <Property Name="Column 4" Type="varchar" MaxLength="50" />
-        </EntityType>-->
-  <Association Name="FK_Cars_Car_Colors">
-    <End Role="Car_Colors" Type="Self.Car_Colors" Multiplicity="0..1" />
-    <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Car_Colors">
-        <PropertyRef Name="Color code" />
-      </Principal>
-      <Dependent Role="Cars">
-        <PropertyRef Name="Number of color" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Cars_Drivers">
     <End Role="Drivers" Type="Self.Drivers" Multiplicity="0..1" />
     <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
@@ -114,14 +72,9 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="Хранилище GIBDDModelContainer">
-    <EntitySet Name="Car_Colors" EntityType="Self.Car_Colors" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Drivers" EntityType="Self.Drivers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_Cars_Car_Colors" Association="Self.FK_Cars_Car_Colors">
-      <End Role="Car_Colors" EntitySet="Car_Colors" />
-      <End Role="Cars" EntitySet="Cars" />
-    </AssociationSet>
     <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
       <End Role="Drivers" EntitySet="Drivers" />
       <End Role="Cars" EntitySet="Cars" />

@@ -1,18 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="GIBDDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Car_Colors">
-    <Key>
-      <PropertyRef Name="Color_code" />
-    </Key>
-    <Property Name="Color_num" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Color_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Colorname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="is_metallic_" Type="Int32" />
-    <Property Name="Name_EN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Colorname_EN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <NavigationProperty Name="Cars" Relationship="Self.FK_Cars_Car_Colors" FromRole="Car_Colors" ToRole="Cars" />
-  </EntityType>
   <EntityType Name="Car">
     <Key>
       <PropertyRef Name="VIN" />
@@ -33,7 +20,6 @@
     <Property Name="Max_weight" Type="Int32" />
     <Property Name="Engine_model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="driver" Type="Int32" />
-    <NavigationProperty Name="Car_Colors" Relationship="Self.FK_Cars_Car_Colors" FromRole="Cars" ToRole="Car_Colors" />
     <NavigationProperty Name="Driver1" Relationship="Self.FK_Cars_Drivers" FromRole="Cars" ToRole="Drivers" />
   </EntityType>
   <EntityType Name="Driver">
@@ -67,18 +53,6 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
-  <Association Name="FK_Cars_Car_Colors">
-    <End Role="Car_Colors" Type="Self.Car_Colors" Multiplicity="0..1" />
-    <End Role="Cars" Type="Self.Car" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Car_Colors">
-        <PropertyRef Name="Color_code" />
-      </Principal>
-      <Dependent Role="Cars">
-        <PropertyRef Name="Number_of_color" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Cars_Drivers">
     <End Role="Drivers" Type="Self.Driver" Multiplicity="0..1" />
     <End Role="Cars" Type="Self.Car" Multiplicity="*" />
@@ -92,14 +66,9 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="GIBDDEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Car_Colors" EntityType="Self.Car_Colors" />
     <EntitySet Name="Cars" EntityType="Self.Car" />
     <EntitySet Name="Drivers" EntityType="Self.Driver" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <AssociationSet Name="FK_Cars_Car_Colors" Association="Self.FK_Cars_Car_Colors">
-      <End Role="Car_Colors" EntitySet="Car_Colors" />
-      <End Role="Cars" EntitySet="Cars" />
-    </AssociationSet>
     <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
       <End Role="Drivers" EntitySet="Drivers" />
       <End Role="Cars" EntitySet="Cars" />

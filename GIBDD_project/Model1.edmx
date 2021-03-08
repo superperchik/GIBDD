@@ -5,18 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище GIBDDModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Car_Colors">
-          <Key>
-            <PropertyRef Name="Color code" />
-          </Key>
-          <Property Name="Color num" Type="nchar" MaxLength="10" />
-          <Property Name="Color code" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="name" Type="nchar" MaxLength="10" />
-          <Property Name="Colorname" Type="nchar" MaxLength="10" />
-          <Property Name="is metallic?" Type="int" />
-          <Property Name="Name EN" Type="nchar" MaxLength="10" />
-          <Property Name="Colorname EN" Type="nchar" MaxLength="10" />
-        </EntityType>
         <EntityType Name="Cars">
           <Key>
             <PropertyRef Name="VIN" />
@@ -58,15 +46,6 @@
           <Property Name="image" Type="varbinary(max)" />
           <Property Name="description" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "GIBDD.dbo.Region Codes" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Region Codes">
-          <Property Name="Region name RU" Type="nvarchar" MaxLength="50" />
-          <Property Name="Subject code" Type="nvarchar" MaxLength="50" />
-          <Property Name="Code" Type="nvarchar" MaxLength="10" />
-          <Property Name="OKATO code" Type="nvarchar" MaxLength="50" />
-          <Property Name="ISO 3166-2" Type="nvarchar" MaxLength="10" />
-        </EntityType>-->
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -85,27 +64,6 @@
           <Property Name="Password" Type="nvarchar" MaxLength="50" />
           <Property Name="Role" Type="int" />
         </EntityType>-->
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6013: Первичный ключ в таблице или представлении "GIBDD.dbo.Копия Region Codes" не определен, его не удалось вывести. Эта таблица или представление исключены. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
-        <EntityType Name="Копия Region Codes">
-          <Property Name="Column 0" Type="varchar" MaxLength="50" />
-          <Property Name="Column 1" Type="varchar" MaxLength="50" />
-          <Property Name="Column 2" Type="varchar" MaxLength="50" />
-          <Property Name="Column 3" Type="varchar" MaxLength="50" />
-          <Property Name="Column 4" Type="varchar" MaxLength="50" />
-        </EntityType>-->
-        <Association Name="FK_Cars_Car_Colors">
-          <End Role="Car_Colors" Type="Self.Car_Colors" Multiplicity="0..1" />
-          <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Car_Colors">
-              <PropertyRef Name="Color code" />
-            </Principal>
-            <Dependent Role="Cars">
-              <PropertyRef Name="Number of color" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Cars_Drivers">
           <End Role="Drivers" Type="Self.Drivers" Multiplicity="0..1" />
           <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
@@ -119,14 +77,9 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="Хранилище GIBDDModelContainer">
-          <EntitySet Name="Car_Colors" EntityType="Self.Car_Colors" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Drivers" EntityType="Self.Drivers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Cars_Car_Colors" Association="Self.FK_Cars_Car_Colors">
-            <End Role="Car_Colors" EntitySet="Car_Colors" />
-            <End Role="Cars" EntitySet="Cars" />
-          </AssociationSet>
           <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
             <End Role="Drivers" EntitySet="Drivers" />
             <End Role="Cars" EntitySet="Cars" />
@@ -137,19 +90,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GIBDDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Car_Colors">
-          <Key>
-            <PropertyRef Name="Color_code" />
-          </Key>
-          <Property Name="Color_num" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Color_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Colorname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="is_metallic_" Type="Int32" />
-          <Property Name="Name_EN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Colorname_EN" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="Cars" Relationship="Self.FK_Cars_Car_Colors" FromRole="Car_Colors" ToRole="Cars" />
-        </EntityType>
         <EntityType Name="Car">
           <Key>
             <PropertyRef Name="VIN" />
@@ -170,7 +110,6 @@
           <Property Name="Max_weight" Type="Int32" />
           <Property Name="Engine_model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="driver" Type="Int32" />
-          <NavigationProperty Name="Car_Colors" Relationship="Self.FK_Cars_Car_Colors" FromRole="Cars" ToRole="Car_Colors" />
           <NavigationProperty Name="Driver1" Relationship="Self.FK_Cars_Drivers" FromRole="Cars" ToRole="Drivers" />
         </EntityType>
         <EntityType Name="Driver">
@@ -204,18 +143,6 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <Association Name="FK_Cars_Car_Colors">
-          <End Role="Car_Colors" Type="Self.Car_Colors" Multiplicity="0..1" />
-          <End Role="Cars" Type="Self.Car" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Car_Colors">
-              <PropertyRef Name="Color_code" />
-            </Principal>
-            <Dependent Role="Cars">
-              <PropertyRef Name="Number_of_color" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Cars_Drivers">
           <End Role="Drivers" Type="Self.Driver" Multiplicity="0..1" />
           <End Role="Cars" Type="Self.Car" Multiplicity="*" />
@@ -229,14 +156,9 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="GIBDDEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Car_Colors" EntityType="Self.Car_Colors" />
           <EntitySet Name="Cars" EntityType="Self.Car" />
           <EntitySet Name="Drivers" EntityType="Self.Driver" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-          <AssociationSet Name="FK_Cars_Car_Colors" Association="Self.FK_Cars_Car_Colors">
-            <End Role="Car_Colors" EntitySet="Car_Colors" />
-            <End Role="Cars" EntitySet="Cars" />
-          </AssociationSet>
           <AssociationSet Name="FK_Cars_Drivers" Association="Self.FK_Cars_Drivers">
             <End Role="Drivers" EntitySet="Drivers" />
             <End Role="Cars" EntitySet="Cars" />
@@ -248,19 +170,6 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище GIBDDModelContainer" CdmEntityContainer="GIBDDEntities">
-          <EntitySetMapping Name="Car_Colors">
-            <EntityTypeMapping TypeName="GIBDDModel.Car_Colors">
-              <MappingFragment StoreEntitySet="Car_Colors">
-                <ScalarProperty Name="Color_num" ColumnName="Color num" />
-                <ScalarProperty Name="Color_code" ColumnName="Color code" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="Colorname" ColumnName="Colorname" />
-                <ScalarProperty Name="is_metallic_" ColumnName="is metallic?" />
-                <ScalarProperty Name="Name_EN" ColumnName="Name EN" />
-                <ScalarProperty Name="Colorname_EN" ColumnName="Colorname EN" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Cars">
             <EntityTypeMapping TypeName="GIBDDModel.Car">
               <MappingFragment StoreEntitySet="Cars">

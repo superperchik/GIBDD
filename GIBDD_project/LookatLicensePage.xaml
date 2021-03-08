@@ -9,8 +9,8 @@
       Title="LookatLicensePage" MaxHeight="450" MaxWidth="800">
 
     <Grid>
-        <Image Source="driver_licence_example.jpg" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="495" />
-        <Label Content="Образец водительского удостоверения 2020" HorizontalAlignment="Center" FontSize="35" FontWeight="ExtraBlack" Foreground="White" FontFamily="Times New Roman"  VerticalAlignment="Top"/>
-        <Label Content="При сомнениях в подлинности удостоверения немедленно сообщите старшему инспектору!" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" FontWeight="DemiBold" Foreground="Red" FontFamily="Times New Roman"></Label>
+        <Image Source="driver_licence_example.jpg" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="508" Height="313"    />
+        <Label Content="Образец водительского удостоверения 2020" HorizontalAlignment="Center" FontSize="35" FontWeight="ExtraBlack" Foreground="Black" FontFamily="Times New Roman"  VerticalAlignment="Top"/>
+        <Label Content="При сомнениях в подлинности удостоверения немедленно сообщите старшему инспектору!" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" FontWeight="DemiBold" Foreground="Black" FontFamily="Times New Roman"></Label>
     </Grid>
 </Page>

@@ -4,12 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c856329aa36d46658adf47cc4f386fdd" Name="Diagram1">
-        <EntityTypeShape EntityType="GIBDDModel.Car_Colors" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+      <Diagram DiagramId="c0b8ec6391524bfc928440ce5a4e8eb8" Name="Diagram1">
         <EntityTypeShape EntityType="GIBDDModel.Car" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="GIBDDModel.Driver" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIBDDModel.Driver" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="GIBDDModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="GIBDDModel.FK_Cars_Car_Colors" ManuallyRouted="false" />
         <AssociationConnector Association="GIBDDModel.FK_Cars_Drivers" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

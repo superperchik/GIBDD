@@ -32,7 +32,6 @@ namespace GIBDD_project
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Car_Colors> Car_Colors { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Driver> Drivers { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }

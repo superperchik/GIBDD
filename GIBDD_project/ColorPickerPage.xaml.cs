@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace GIBDD_project
 {
     /// <summary>
-    /// Логика взаимодействия для AdminForm.xaml
+    /// Логика взаимодействия для ColorPickerPage.xaml
     /// </summary>
-    public partial class AdminForm : Page
+    public partial class ColorPickerPage : Page
     {
-        public AdminForm()
+        public ColorPickerPage()
         {
             InitializeComponent();
         }
