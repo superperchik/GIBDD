@@ -11,5 +11,7 @@ namespace GIBDD_project
     {
         //public static Frame MainFrame { get; set; }
         public static Frame MainFrame { get; set; }
+        
+        
     }
 }

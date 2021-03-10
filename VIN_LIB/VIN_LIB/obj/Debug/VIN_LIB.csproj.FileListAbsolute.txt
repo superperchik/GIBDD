@@ -1,5 +1,0 @@
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\VIN_LIB\VIN_LIB\obj\Debug\VIN_LIB.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\VIN_LIB\VIN_LIB\bin\Debug\VIN_LIB.dll
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\VIN_LIB\VIN_LIB\bin\Debug\VIN_LIB.pdb
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\VIN_LIB\VIN_LIB\obj\Debug\VIN_LIB.dll
-C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\VIN_LIB\VIN_LIB\obj\Debug\VIN_LIB.pdb

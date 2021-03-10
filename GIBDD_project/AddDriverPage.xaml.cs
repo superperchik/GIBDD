@@ -53,10 +53,10 @@ namespace GIBDD_project
                 errors.AppendLine("Введите Номер Паспорта");
 
             if (string.IsNullOrWhiteSpace(_currentDrivers.passportserial))
-                errors.AppendLine("Введите Серию Пасспорта");
+                errors.AppendLine("Введите Серию Паспорта");
 
             if (string.IsNullOrWhiteSpace(_currentDrivers.address))
-                errors.AppendLine("Введите Адресс");
+                errors.AppendLine("Введите Адрес");
 
             if (string.IsNullOrWhiteSpace(_currentDrivers.email))
                 errors.AppendLine("Введите Почту");
@@ -78,6 +78,84 @@ namespace GIBDD_project
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+
+                if (sender is TextBox textBox)
+            {
+
+                textBox.Text = new string
+                    (
+                         textBox
+                         .Text
+                         .Where
+                         (ch =>
+                            (ch >= 'а' && ch <= 'я')
+                            || (ch >= 'А' && ch <= 'Я')
+                            || ch == 'ё' || ch == 'Ё'
+                         )
+                         .ToArray()
+                    );
+            }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+
+                textBox.Text = new string
+                    (
+                         textBox
+                         .Text
+                         .Where
+                         (ch =>
+                            (ch >= 'а' && ch <= 'я')
+                            || (ch >= 'А' && ch <= 'Я')
+                            || ch == 'ё' || ch == 'Ё'
+                         )
+                         .ToArray()
+                    );
+            }
+        }
+
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+
+                textBox.Text = new string
+                    (
+                         textBox
+                         .Text
+                         .Where
+                         (ch =>
+                            (ch >= 'а' && ch <= 'я')
+                            || (ch >= 'А' && ch <= 'Я')
+                            || ch == 'ё' || ch == 'Ё'
+                         )
+                         .ToArray()
+                    );
+            }
+        }
+
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBox_PreviewTextInput_1(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
             }
         }
     }

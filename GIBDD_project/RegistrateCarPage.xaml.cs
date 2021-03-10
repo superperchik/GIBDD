@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace GIBDD_project
 {
     /// <summary>
@@ -25,9 +26,13 @@ namespace GIBDD_project
         {
             InitializeComponent();
             if (selectedCar != null)
+            
                 _currentCars = selectedCar;
-            DataContext = _currentCars;
+                DataContext = _currentCars;
+            
+            
         }
+
         private void BtnSaveCar_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder errors = new StringBuilder();
@@ -35,6 +40,7 @@ namespace GIBDD_project
            
             if( string.IsNullOrWhiteSpace(_currentCars.VIN))
                 errors.AppendLine("Введите все 17 символов VIN");
+            
             if (string.IsNullOrWhiteSpace(_currentCars.Manufacturer))
                 errors.AppendLine("Введите Марку машины");
 
@@ -49,6 +55,12 @@ namespace GIBDD_project
 
              if ((_currentCars.Engine_type)<1900 || (_currentCars.Engine_type)>2021)
                errors.AppendLine("Введите тип двигателя машины");
+
+            if (string.IsNullOrWhiteSpace(_currentCars.category_of_car))
+                errors.AppendLine("Введите категорию машины");
+
+            if ((_currentCars.Engine_number) < 0)
+                errors.AppendLine("Введите номер двигателя");
 
             if (errors.Length > 0)
             {
@@ -74,7 +86,58 @@ namespace GIBDD_project
 
         private void BtnPalitra_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new ColorPage());
+            // Manager.MainFrame.Navigate(new ColorPage());
+            // Hide();
+           // colorbox.Text = D.ColorData;
+            ColorForm form = new ColorForm();
+            form.ShowDialog();
+           // Close();
         }
+
+        private void colorbox_MouseMove(object sender, MouseEventArgs e)
+        {
+            colorbox.Text = D.ColorData;
+        }
+
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBox_PreviewTextInput_1(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBox_PreviewTextInput_2(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBox_PreviewTextInput_3(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsDigit(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
+        //удалить
+
+        private void colorbox_Initialized(object sender, EventArgs e)
+        {
+            colorbox.Text = D.ColorData;
+        }
+
+        
     }
 }

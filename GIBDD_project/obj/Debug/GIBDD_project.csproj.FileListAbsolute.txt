@@ -72,3 +72,4 @@ C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\D
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPage.baml
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPickerPage.g.cs
 C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\ColorPickerPage.baml
+C:\Users\User\Desktop\РЧ 2019 2020\проект гибдд\GIBDD_project\obj\Debug\GIBDD_project.ColorForm.resources
