@@ -12,7 +12,6 @@ namespace GIBDD_project
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
     public partial class GIBDDEntities : DbContext
     {
         private static GIBDDEntities _context;
@@ -26,12 +25,10 @@ namespace GIBDD_project
                 _context = new GIBDDEntities();
             return _context;
         }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Driver> Drivers { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
