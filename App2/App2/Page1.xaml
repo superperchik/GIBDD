@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page1">
+    <StackLayout Margin="20,35,20,20">
+        <Frame BackgroundColor="YellowGreen" Padding="24" CornerRadius="0">
+            <Label Text="Введите данные" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="Comic sans ms" />
+        </Frame>
+        <Entry x:Name="nameEntry"
+               Placeholder="Enter name" />
+        
+        <Entry x:Name="ageEntry"
+               Placeholder="Enter age" />
+        <Button Text="Add to Database"
+                Clicked="Button_Clicked" />
+        <CollectionView x:Name="collectionView">
+            
+            <CollectionView.ItemTemplate>
+                
+                <DataTemplate>
+                    
+                    <StackLayout>
+                        
+                        <Label Text="{Binding ID}"
+                               FontSize="Medium" />
+                        <Label Text="{Binding Name}"
+                               FontSize="Medium" />
+                        <Label Text="{Binding Age}"
+                               TextColor="Silver"
+                               FontSize="Small" />
+                        
+                        
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

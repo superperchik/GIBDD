@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+    <ScrollView>
+    <StackLayout>
+            <Frame BackgroundColor="YellowGreen" Padding="24" CornerRadius="0">
+                <Label Text="ГИБДД" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontFamily="Comic sans ms" />
+            </Frame>
+            <Image x:Name="image1"   VerticalOptions="Fill" HorizontalOptions="Fill"></Image>
+        <Label Text="Логин" FontSize="36" FontFamily="Comic sans ms" Padding="30,10,30,10" ></Label>
+        <Entry x:Name="LoginBox" Placeholder="Введите текст" MaxLength="15"></Entry>
+        <Label Text="Пароль" FontSize="36" FontFamily="Comic sans ms" Padding="30,10,30,10" ></Label>
+        <Entry x:Name="PasBox" IsPassword="True" Placeholder="Введите пароль" MaxLength="15"></Entry>
+        <Button Text="Войти" Clicked="Button_Clicked" Margin="30,10,30,10" ></Button>
+        
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
