@@ -59,7 +59,7 @@
             <TextBox  Height="22" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Engine_year}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,11,0,68" Grid.RowSpan="2" FontFamily="Comic Sans MS" PreviewTextInput="TextBox_PreviewTextInput_3"/>
 
             <TextBlock FontSize="30" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Id водителя" VerticalAlignment="Center" Grid.Row="9" Height="50" Width="250" Margin="58,9,58,10" FontFamily="Comic Sans MS"/>
-            <ComboBox  Height="24" Grid.Row="9" Grid.Column="1" Name="driver" ItemsSource="{Binding Car}" DisplayMemberPath="Car" SelectedValuePath="driver" SelectedValue="{Binding Path=driver}" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,23,0,22" FontFamily="Comic Sans MS"/>
+            <TextBox  Height="24" Grid.Row="9" Grid.Column="1" Name="driver" Text="{Binding driver}"  VerticalAlignment="Center" HorizontalAlignment="Left"  Width="332" Margin="10,23,0,22" FontFamily="Comic Sans MS"/>
 
             <Button Background="Yellow" x:Name="BtnSaveCar" Content="Сохранить" FontSize="45" HorizontalAlignment="Left"  Grid.Row="10" VerticalAlignment="Top" Width="763" Height="67" Click="BtnSaveCar_Click" Margin="10,0,0,0" Grid.ColumnSpan="2" FontFamily="Comic Sans MS"/>
             <Button Background="Yellow" x:Name="BtnPalitra" Click="BtnPalitra_Click" Content="Палитра" Grid.Column="1" HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Center" Width="112" FontFamily="Comic Sans MS" FontSize="18" Margin="0,9,39,1"/>
